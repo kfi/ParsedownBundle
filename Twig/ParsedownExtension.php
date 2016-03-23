@@ -1,26 +1,26 @@
 <?php
 
-namespace Bgaze\ParsedownBundle\Twig;
+namespace Colibo\ParsedownBundle\Twig;
 
 class ParsedownExtension extends \Twig_Extension {
 
-    protected $standartParser;
+    protected $parser;
     protected $extraParser;
 
-    public function __construct(\Parsedown $standartParser, \ParsedownExtra $extraParser) {
-        $this->standartParser = $standartParser;
+    public function __construct(\Parsedown $parser, \ParsedownExtra $extraParser) {
+        $this->parser = $parser;
         $this->extraParser = $extraParser;
     }
 
     public function getFilters() {
         return array(
-            'md' => new \Twig_Filter_Method($this, 'parsedownStandart', array('is_safe' => array('html'))),
+            'md' => new \Twig_Filter_Method($this, 'parsedown', array('is_safe' => array('html'))),
             'mde' => new \Twig_Filter_Method($this, 'parsedownExtra', array('is_safe' => array('html'))),
         );
     }
 
-    public function parsedownStandart($str) {
-        return $this->standartParser->text($str);
+    public function parsedown($str) {
+        return $this->parser->text($str);
     }
 
     public function parsedownExtra($str) {
