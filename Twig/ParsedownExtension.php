@@ -14,8 +14,8 @@ class ParsedownExtension extends \Twig_Extension {
 
     public function getFilters() {
         return array(
-            'md' => new \Twig_Filter_Method($this, 'parsedown', array('is_safe' => array('html'))),
-            'mde' => new \Twig_Filter_Method($this, 'parsedownExtra', array('is_safe' => array('html'))),
+            'md' => new \Twig_SimpleFilter('parsedown', array($this, 'parsedown'), array('is_safe' => array('html'))),
+            'mde' => new \Twig_SimpleFilter('parsedownExtra', array($this, 'parsedownExtra'), array('is_safe' => array('html'))),
         );
     }
 
