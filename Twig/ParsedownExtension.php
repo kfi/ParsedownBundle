@@ -1,6 +1,6 @@
 <?php
 
-namespace Colibo\ParsedownBundle\Twig;
+namespace JeremyJumeau\ParsedownBundle\Twig;
 
 class ParsedownExtension extends \Twig_Extension {
 

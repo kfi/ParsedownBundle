@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Add support for parsedown and parsedown-extra in Symfony 3 by providing services and Twig filters.",
     "keywords": ["parsedown", "twig", "symfony2", "symfony3", "markdown", "bundle"],
-    "homepage": "https://github.com/colibo/ParsedownBundle",
+    "homepage": "https://github.com/jeremyjumeau/ParsedownBundle",
     "license": "MIT",
     "authors": [
         {
@@ -23,8 +23,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Colibo\\ParsedownBundle": ""
+            "JeremyJumeau\\ParsedownBundle": ""
         }
     },
-    "target-dir": "Colibo/ParsedownBundle"
+    "target-dir": "JeremyJumeau/ParsedownBundle"
 }

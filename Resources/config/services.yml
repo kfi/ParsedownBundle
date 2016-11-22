@@ -3,8 +3,8 @@ services:
         class: Parsedown
     parsedown_extra:
         class: ParsedownExtra
-    colibo.bundles.parsedown.twig.extension:
-        class: Colibo\ParsedownBundle\Twig\ParsedownExtension
+    jeremyjumeau.bundles.parsedown.twig.extension:
+        class: JeremyJumeau\ParsedownBundle\Twig\ParsedownExtension
         arguments: ["@parsedown", "@parsedown_extra"]
         tags:
-         - { name: twig.extension }         
+         - { name: twig.extension }
