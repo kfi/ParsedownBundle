@@ -4,7 +4,7 @@ services:
     parsedown_extra:
         class: ParsedownExtra
     jeremyjumeau.bundles.parsedown.twig.extension:
-        class: JeremyJumeau\ParsedownBundle\Twig\ParsedownExtension
+        class: Jeremyjumeau\ParsedownBundle\Twig\ParsedownExtension
         arguments: ["@parsedown", "@parsedown_extra"]
         tags:
          - { name: twig.extension }

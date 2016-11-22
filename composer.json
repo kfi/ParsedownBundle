@@ -19,12 +19,13 @@
         "php": ">=5.3.3",
         "symfony/symfony": "~2.3|~3.0",
         "erusev/parsedown": "^1.6",
-        "erusev/parsedown-extra": "^0.7.1"
+        "erusev/parsedown-extra": "^0.7.1",
+        "jeremyjumeau/parsedown-bundle": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "JeremyJumeau\\ParsedownBundle": ""
+            "Jeremyjumeau\\ParsedownBundle": ""
         }
     },
-    "target-dir": "JeremyJumeau/ParsedownBundle"
+    "target-dir": "Jeremyjumeau/ParsedownBundle"
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace JeremyJumeau\ParsedownBundle\Twig;
+namespace Jeremyjumeau\ParsedownBundle\Twig;
 
 class ParsedownExtension extends \Twig_Extension {
 

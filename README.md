@@ -1,4 +1,4 @@
-# JeremyJumeau Parsedown Bundle
+# Jeremyjumeau Parsedown Bundle
 
 Add support for [parsedown](https://github.com/erusev/parsedown) and [parsedown-extra](https://github.com/erusev/parsedown-extra) in Symfony 3.
 
@@ -21,7 +21,7 @@ Add the bundle in your *composer.json* :
 
 Update your vendors, then enable bundle in *AppKernel.php* :
 
-    new JeremyJumeau\ParsedownBundle\JeremyJumeauParsedownBundle(),
+    new Jeremyjumeau\ParsedownBundle\JeremyjumeauParsedownBundle(),
 
 ## Usage
 
