@@ -16,7 +16,7 @@ Provides :
 Add the bundle in your *composer.json* :
 
     "require": {
-        "colibo/parsedown-bundle": "dev-master"
+        "jeremyjumeau/parsedown-bundle": "dev-master"
     }
 
 Update your vendors, then enable bundle in *AppKernel.php* :
