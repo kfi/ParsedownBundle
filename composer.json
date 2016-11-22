@@ -1,5 +1,5 @@
 {
-    "name": "colibo/parsedown-bundle",
+    "name": "jeremyjumeau/parsedown-bundle",
     "type": "symfony-bundle",
     "description": "Add support for parsedown and parsedown-extra in Symfony 3 by providing services and Twig filters.",
     "keywords": ["parsedown", "twig", "symfony2", "symfony3", "markdown", "bundle"],
@@ -9,7 +9,11 @@
         {
             "name": "Kian Foroodi",
             "homepage": "http://colibo.io"
-        }
+        },
+        {
+            "name": "Jeremy Jumeau",
+            "homepage": "https://github.com/jeremyjumeau"
+        },
     ],
     "require": {
         "php": ">=5.3.3",
