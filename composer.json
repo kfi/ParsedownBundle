@@ -13,7 +13,7 @@
         {
             "name": "Jeremy Jumeau",
             "homepage": "https://github.com/jeremyjumeau"
-        },
+        }
     ],
     "require": {
         "php": ">=5.3.3",
