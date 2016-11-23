@@ -14,21 +14,21 @@ class ParsedownExtension extends \Twig_Extension {
 
     public function getFilters() {
         return array(
-            'md' => new \Twig_SimpleFilter('parsedown', array($this, 'parsedown'), array('is_safe' => array('html'))),
-            'mde' => new \Twig_SimpleFilter('parsedownExtra', array($this, 'parsedownExtra'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFilter('parsedown', array($this, 'parsedownFilter'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFilter('parsedownExtra', array($this, 'parsedownExtraFilter'), array('is_safe' => array('html'))),
         );
     }
 
-    public function parsedown($str) {
+    public function parsedownFilter($str) {
         return $this->parser->text($str);
     }
 
-    public function parsedownExtra($str) {
+    public function parsedownExtraFilter($str) {
         return $this->extraParser->text($str);
     }
 
     public function getName() {
-        return 'parsedown';
+        return 'parsedown_extension';
     }
 
 }
