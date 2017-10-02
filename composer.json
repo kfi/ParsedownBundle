@@ -20,7 +20,7 @@
         "symfony/symfony": "~2.3|~3.0",
         "erusev/parsedown": "^1.6",
         "erusev/parsedown-extra": "^0.7.1",
-        "jeremyjumeau/parsedown-bundle": "^1.0"
+        "jeremyjumeau/parsedown-bundle": "^1.0.2"
     },
     "autoload": {
         "psr-0": {
